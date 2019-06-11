@@ -1,0 +1,64 @@
+/*ExploreTopicsView Styles*/
+.explore-topics-view-main-div {
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.explore-topics-main-div h1 {
+}
+.explore-topics-main-title {
+  color: black;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 47.6px;
+  padding: 20px 0px;
+  margin: 0px 20px 20px 0px;
+}
+.topic-card {
+  width: 280px;
+  height: 280px;
+  margin: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+.topic-card:hover {
+  cursor: pointer;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  width: 280px;
+  padding: 0px 20px;
+}
+.topic-add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 50%;
+}
+.topic-add-button:hover {
+}
+.topic-card-img {
+  width: 278px;
+  height: 183px;
+  background-position: center;
+  background-size: cover;
+}
+.card-header h2 {
+  color: rgba(0, 0, 0, 0.84);
+}
+.topic-card-gallery {
+  max-width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px; */
+}

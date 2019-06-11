@@ -1,0 +1,150 @@
+.topic-header-bar-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  /* background: indianred; */
+  background: white;
+  top: -1px;
+  position: sticky;
+}
+
+.topic-header-bar-main-div.shadow {
+  -webkit-box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75);
+}
+
+.story-header-icons {
+  cursor: pointer;
+}
+
+.topic-header-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: stretch;
+  max-width: 1000px;
+  height: 50px;
+  /* background: palegreen; */
+  position: absolute;
+}
+
+.topic-header-bar a {
+  text-decoration: none;
+}
+
+.topic-nav-link {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.topic-header-grid {
+  /* background: lightcoral; */
+  /* grid-template-columns: repeat(14, 1fr); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  object-position: left;
+}
+
+.topic-header-grid.right {
+  animation: TopicBarScrollRight 0.1s forwards;
+}
+
+.topic-header-grid.left {
+  animation: TopicBarScrollLeft 0.1s;
+}
+
+.topic-header-arrow {
+  width: 21px;
+  height: 21px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.search-and-icon {
+  display: flex;
+  align-items: center;
+}
+
+.book-and-note {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-and-note>* {
+  margin: 0px 5px;
+}
+
+input[name="SearchBar"] {
+  border: 0px;
+  width: 0px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  animation: SearchDeexpand 0.25s;
+}
+
+.search-field {
+  display: flex;
+}
+
+input[name="SearchBar"]:focus {
+  width: 156px;
+  animation: SearchExpand 0.25s;
+}
+
+@keyframes TopicBarScrollRight {
+  0% {
+    justify-content: flex-start;
+  }
+
+  50% {
+    justify-content: center;
+  }
+
+  100% {
+    justify-content: flex-end;
+  }
+}
+
+@keyframes TopicBarScrollLeft {
+  0% {
+    justify-content: flex-end;
+  }
+
+  50% {
+    justify-content: center;
+  }
+
+  100% {
+    justify-content: flex-start;
+  }
+}
+
+@keyframes SearchExpand {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 156px;
+  }
+}
+
+@keyframes SearchDeexpand {
+  0% {
+    width: 156px;
+  }
+
+  100% {
+    width: 0px;
+  }
+}

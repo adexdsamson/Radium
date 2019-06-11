@@ -1,0 +1,28 @@
+.tab-heading-main-div {
+  display: flex;
+  max-width: 1000px;
+  width: stretch;
+  height: 46px;
+  /* background: saddlebrown; */
+  border-bottom: 1px rgba(0, 0, 0, 0.24) solid;
+  margin-bottom: 25px;
+}
+.tab-heading-tab {
+  padding-bottom: 20px;
+  margin-bottom: -1;
+  font-size: 22px;
+  line-height: 26.4px;
+  margin-right: 20px;
+  /* color: black;
+  font-weight: 500; */
+}
+.color-black {
+  color: black;
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+.tab-heading-tab.active {
+  color: black;
+  border-bottom: 1px rgba(0, 0, 0, 0.84) solid;
+}
